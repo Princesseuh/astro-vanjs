@@ -23,7 +23,7 @@
 			"import": "./dist/client.js"
 		}
 	},
-	"keywords": ["withastro", "renderer", "vanjs"],
+	"keywords": ["withastro", "renderer", "vanjs", "astro-integration"],
 	"author": "Princesseuh",
 	"license": "MIT",
 	"devDependencies": {
