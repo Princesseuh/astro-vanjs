@@ -1,8 +1,7 @@
 {
 	"name": "astro-vanjs",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"version": "0.1.0",
+	"description": "Astro integration for VanJS",
 	"scripts": {
 		"prepublish": "pnpm run build",
 		"dev": "tsc --watch",
@@ -24,7 +23,7 @@
 			"import": "./dist/client.js"
 		}
 	},
-	"keywords": [],
+	"keywords": ["withastro", "renderer", "vanjs"],
 	"author": "Princesseuh",
 	"license": "MIT",
 	"devDependencies": {
