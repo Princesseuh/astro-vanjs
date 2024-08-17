@@ -1,6 +1,6 @@
 import type { AstroIntegration } from "astro";
 
-const astroVanjs: AstroIntegration = {
+const astroVanjs: () => AstroIntegration = () => ({
 	name: "astro-vanjs",
 	hooks: {
 		"astro:config:setup": async ({ addRenderer }) => {
@@ -11,6 +11,6 @@ const astroVanjs: AstroIntegration = {
 			});
 		},
 	},
-};
+});
 
 export default astroVanjs;
