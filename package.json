@@ -6,7 +6,8 @@
 	"scripts": {
 		"prepublish": "pnpm run build",
 		"dev": "tsc --watch",
-		"build": "tsc"
+		"build": "tsc",
+		"format": "biome check --write"
 	},
 	"files": ["dist"],
 	"exports": {
@@ -27,6 +28,7 @@
 	"author": "Princesseuh",
 	"license": "MIT",
 	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
 		"astro": "^4.14.2",
 		"mini-van-plate": "^0.6.0",
 		"vanjs-core": "^1.5.1"

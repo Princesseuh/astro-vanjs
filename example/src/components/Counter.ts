@@ -1,4 +1,4 @@
-import { env, type State } from "mini-van-plate/shared";
+import { type State, env } from "mini-van-plate/shared";
 
 interface Props {
 	readonly id?: string;

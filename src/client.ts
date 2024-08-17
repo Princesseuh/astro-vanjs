@@ -1,10 +1,10 @@
-import van from "vanjs-core";
 import { registerEnv } from "mini-van-plate/shared";
+import van from "vanjs-core";
 
 registerEnv({ van });
 
-export default (element: HTMLElement) =>
-	(
+export default function (element: HTMLElement) {
+	return (
 		Component: any,
 		props: Record<string, any>,
 		{ default: children, ...slotted }: Record<string, any>,
@@ -19,3 +19,4 @@ export default (element: HTMLElement) =>
 			van.add(element, Component(properties));
 		}
 	};
+}
