@@ -1,6 +1,9 @@
 ---
 import Counter from "../components/Counter.ts";
 import Hello from "../components/Hello.ts";
+import { TodoList } from "../components/TodoList.ts";
+
+// All examples from https://vanjs.org/demo
 ---
 
 <html lang="en">
@@ -10,8 +13,10 @@ import Hello from "../components/Hello.ts";
     <title>Document</title>
   </head>
   <body>
-    <Hello />
-    <Hello client:load />
+    <Hello message="Server" />
+    <Hello message="Client" client:load />
     <Counter client:idle />
+
+    <TodoList client:only />
   </body>
 </html>

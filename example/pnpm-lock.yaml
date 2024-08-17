@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.14.2
     version: 4.14.2(typescript@5.5.4)
   astro-vanjs:
-    specifier: link:../astro-vanjs
-    version: link:../astro-vanjs
+    specifier: link:..
+    version: link:..
 
 packages:
 

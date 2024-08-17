@@ -9,12 +9,22 @@ type RendererContext = {
 	result: SSRResult;
 };
 
-async function check(this: RendererContext, Component: unknown) {
+async function check(
+	this: RendererContext,
+	Component: any,
+	props: Record<string, any>,
+	children: any,
+) {
 	if (typeof Component !== "function") return false;
 	if (Component.name === "QwikComponent") return false;
 
 	try {
-		van.html(Component());
+		const { html } = await renderToStaticMarkup.call(this, Component, props, children, undefined);
+
+		if (typeof html !== "string") {
+			return false;
+		}
+
 		return true;
 	} catch (e) {
 		return false;

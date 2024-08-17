@@ -1,11 +1,15 @@
 import { env } from "mini-van-plate/shared";
 
-export default () => {
+interface Props {
+	message: string;
+}
+
+export default ({ message }: Props) => {
 	const { a, div, li, p, ul } = env.van.tags;
 
 	const fromServer = typeof window === "undefined";
 	return div(
-		p(() => `👋Hello (from ${fromServer ? "server" : "client"})`),
+		p(() => `${message} (from ${fromServer ? "server" : "client"})`),
 		ul(li("🗺️World"), li(a({ href: "https://vanjs.org/" }, "🍦VanJS"))),
 	);
 };
