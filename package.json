@@ -28,10 +28,10 @@
 	"author": "Princesseuh",
 	"license": "MIT",
 	"devDependencies": {
-		"@biomejs/biome": "1.8.3",
-		"astro": "^4.14.2",
+		"@biomejs/biome": "1.9.2",
+		"astro": "^4.15.9",
 		"mini-van-plate": "^0.6.0",
-		"vanjs-core": "^1.5.1"
+		"vanjs-core": "^1.5.2"
 	},
 	"peerDependencies": {
 		"mini-van-plate": "^0.6.0",
