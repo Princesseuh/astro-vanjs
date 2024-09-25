@@ -1,6 +1,7 @@
 {
 	"name": "astro-vanjs",
 	"version": "0.1.1",
+	"type": "module",
 	"description": "Astro integration for VanJS",
 	"scripts": {
 		"prepublish": "pnpm run build",
